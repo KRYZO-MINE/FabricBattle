@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FF Masters | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">FF MASTERS</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">Menu</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="tournaments.html">Tournaments</a>
+                <a href="leaderboard.html">Leaderboard</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" id="app">
+        <section class="section-head">
+            <h2>Admin Control Center</h2>
+            <p>Manage registrations and match updates here.</p>
+        </section>
+
+        <div class="card-grid">
+            <article class="card">
+                <h3>Google Sheets</h3>
+                <p>Access all registrations and payment proofs directly in the cloud.</p>
+                <a href="#" class="btn btn-primary" style="display: block; margin-top: 15px; text-align: center;">Open Google Sheet</a>
+            </article>
+
+            <article class="card">
+                <h3>Update Room Info</h3>
+                <p>Go to tournaments.html and update the static table values for Room ID & Password.</p>
+                <a href="tournaments.html" class="btn btn-secondary" style="display: block; margin-top: 15px; text-align: center;">Update Info</a>
+            </article>
+        </div>
+
+        <section class="block" style="margin-top: 30px;">
+            <h3>Quick Stats</h3>
+            <div class="grid-layout" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; margin-top: 15px;">
+                <div class="card" style="text-align: center;">
+                    <h4 style="font-size: 2rem; color: var(--ok);">42</h4>
+                    <p>Total Players</p>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <h4 style="font-size: 2rem; color: var(--brand);">15</h4>
+                    <p>Pending Proofs</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>Copyright <span id="year"></span> FF Masters. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="terms.html">Terms</a>
+                <a href="privacy.html">Privacy</a>
+                <a href="legal.html">Legal</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+</body>
+</html>
