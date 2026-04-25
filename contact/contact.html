@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FabricBattle | Contact Us</title>
+    <meta name="description" content="Contact the FabricBattle team for tournament support, partnerships, and queries.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="brand">FabricBattle</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">Menu</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="../index.html">Home</a>
+                <a href="../pages/tournaments.html">Tournaments</a>
+                <a href="../pages/leaderboard.html">Leaderboard</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" id="app">
+        <section class="form-card">
+            <h2>Contact Us</h2>
+            <p class="hero-text">Need help with your tournament entry? Reach out to the FF Masters team.</p>
+            <form id="contactForm">
+                <label>Name
+                    <input type="text" name="name" required>
+                </label>
+                <label>Email
+                    <input type="email" name="email" required>
+                </label>
+                <label>Message
+                    <textarea name="message" rows="4" required></textarea>
+                </label>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>Copyright <span id="year"></span> FabricBattle. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="../policies/terms.html">Terms</a>
+                <a href="../policies/privacy.html">Privacy</a>
+                <a href="../policies/legal.html">Legal</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
