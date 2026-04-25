@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FF Masters | Sign Up</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="brand">FF MASTERS</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">Menu</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="../index.html">Home</a>
+                <a href="tournaments.html">Tournaments</a>
+                <a href="leaderboard.html">Leaderboard</a>
+                <a href="../contact/contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" id="app">
+        <section class="form-card">
+            <h2>Tournament Registration</h2>
+            <p id="selectedTournament" class="hero-text" style="color: var(--ok); font-weight: bold; margin-bottom: 5px;"></p>
+            <p class="hero-text" style="margin-bottom: 20px;">Fill details carefully. Wrong info = Rejection.</p>
+            
+            <form id="registerForm">
+                <input type="hidden" name="tournament" id="tourneyInput">
+                
+                <label>Full Name
+                    <input type="text" name="name" placeholder="As per ID" required>
+                </label>
+                
+                <label>Free Fire UID
+                    <input type="text" name="uid" placeholder="e.g. 123456789" required>
+                </label>
+                
+                <label>WhatsApp Number
+                    <input type="tel" name="whatsapp" placeholder="For Match Updates" required>
+                </label>
+                
+                <label>Payment Screenshot
+                    <input type="file" name="screenshot" accept="image/*" required style="padding: 8px;">
+                    <small style="color: var(--muted); font-size: 0.75rem;">Upload payment proof to confirm slot.</small>
+                </label>
+                
+                <button type="submit" id="submitBtn" class="btn btn-primary" style="margin-top: 10px;">Submit Registration</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>Copyright <span id="year"></span> FF Masters. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="../policies/terms.html">Terms</a>
+                <a href="../policies/privacy.html">Privacy</a>
+                <a href="../policies/legal.html">Legal</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

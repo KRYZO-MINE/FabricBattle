@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FabricBattle | Leaderboard</title>
+    <meta name="description" content="Check out the top players on FabricBattle. Weekly and Monthly Free Fire leaderboards.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="brand">FabricBattle</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">Menu</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="../index.html">Home</a>
+                <a href="tournaments.html">Tournaments</a>
+                <a href="leaderboard.html" class="active">Leaderboard</a>
+                <a href="../contact/contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" id="app">
+        <section class="section-head">
+            <h2>Free Fire Leaderboard</h2>
+            <p>Top legends across different game modes.</p>
+        </section>
+
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="br">Battle Royale (BR)</button>
+            <button class="tab-btn" data-tab="cs">Clash Squad (CS)</button>
+            <button class="tab-btn" data-tab="lonewolf">Lone Wolf</button>
+        </div>
+
+        <div id="br" class="tab-content active">
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player Name</th>
+                            <th>Total Kills</th>
+                            <th>Total Points</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>#1</td><td style="color: var(--ok); font-weight: bold;">SkyFury</td><td>124</td><td>3,120</td></tr>
+                        <tr><td>#2</td><td>RavenX</td><td>110</td><td>2,980</td></tr>
+                        <tr><td>#3</td><td>NovaK</td><td>98</td><td>2,770</td></tr>
+                        <tr><td>#4</td><td>Blaze77</td><td>85</td><td>2,620</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="cs" class="tab-content">
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player Name</th>
+                            <th>MVPs</th>
+                            <th>Win Rate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>#1</td><td style="color: var(--ok); font-weight: bold;">KillerBot</td><td>45</td><td>88%</td></tr>
+                        <tr><td>#2</td><td>SonicFF</td><td>38</td><td>82%</td></tr>
+                        <tr><td>#3</td><td>HeadshotGod</td><td>32</td><td>79%</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="lonewolf" class="tab-content">
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Player Name</th>
+                            <th>1v1 Wins</th>
+                            <th>Win Streak</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>#1</td><td style="color: var(--ok); font-weight: bold;">SoloKing</td><td>156</td><td>12</td></tr>
+                        <tr><td>#2</td><td>ShadowOne</td><td>142</td><td>8</td></tr>
+                        <tr><td>#3</td><td>Wolfie</td><td>128</td><td>5</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>Copyright <span id="year"></span> FabricBattle. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="../policies/terms.html">Terms</a>
+                <a href="../policies/privacy.html">Privacy</a>
+                <a href="../policies/legal.html">Legal</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FabricBattle | Tournaments</title>
+    <meta name="description" content="Join the latest Free Fire tournaments on FabricBattle. Room details, rules, and live updates.">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="../index.html" class="brand">FabricBattle</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">Menu</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="../index.html">Home</a>
+                <a href="tournaments.html" class="active">Tournaments</a>
+                <a href="leaderboard.html">Leaderboard</a>
+                <a href="../contact/contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" id="app">
+        <section class="section-head">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 15px;">
+                <div>
+                    <h2>Free Fire Tournaments</h2>
+                    <p>Pick your tournament, register, and get room details here.</p>
+                </div>
+                <div style="display: flex; align-items: center; gap: 10px;">
+                    <span id="refreshTimer" style="font-size: 0.8rem; color: var(--muted);">Auto-refresh in 10s</span>
+                    <button id="refreshBtn" class="btn btn-secondary" style="padding: 8px 15px; font-size: 0.85rem; display: flex; align-items: center; gap: 5px;">
+                        <span>🔄</span> Refresh Now
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tournament / Mode</th>
+                        <th>Status</th>
+                        <th>Date & Time</th>
+                        <th>Room ID</th>
+                        <th>Password</th>
+                        <th>Entry Fee</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div style="font-weight: bold;">FF Battle Royale Mega</div>
+                            <div style="font-size: 0.75rem; color: var(--brand);">50 Players Max</div>
+                        </td>
+                        <td><span style="color: var(--ok);">Upcoming</span></td>
+                        <td>
+                            <div style="font-size: 0.9rem;">25 April</div>
+                            <div style="font-size: 0.75rem; color: var(--muted);">08:00 PM</div>
+                        </td>
+                        <td class="room-id-cell" data-value="---">Locked 🔒</td>
+                        <td class="pass-cell" data-value="---">Locked 🔒</td>
+                        <td>₹20</td>
+                        <td>
+                            <button class="btn btn-secondary join-btn" data-tourney="FF Battle Royale Mega" style="margin-bottom: 5px;">Register</button>
+                            <button class="btn unlock-btn" data-tourney="FF Battle Royale Mega" style="background: rgba(0, 255, 102, 0.1); color: var(--brand); font-size: 0.7rem; padding: 4px 8px; width: 100%;">Show ID/Pass</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="font-weight: bold;">FF Clash Squad Cup</div>
+                            <div style="font-size: 0.75rem; color: var(--brand);">4v4 Match</div>
+                        </td>
+                        <td><span style="color: var(--ok);">Live</span></td>
+                        <td>
+                            <div style="font-size: 0.9rem;">25 April</div>
+                            <div style="font-size: 0.75rem; color: var(--muted);">09:30 PM</div>
+                        </td>
+                        <td class="room-id-cell" data-value="1234567">Locked 🔒</td>
+                        <td class="pass-cell" data-value="ff99">Locked 🔒</td>
+                        <td>₹40</td>
+                        <td>
+                            <button class="btn btn-secondary join-btn" data-tourney="FF Clash Squad Cup" style="margin-bottom: 5px;">Register</button>
+                            <button class="btn unlock-btn" data-tourney="FF Clash Squad Cup" style="background: rgba(0, 255, 102, 0.1); color: var(--brand); font-size: 0.7rem; padding: 4px 8px; width: 100%;">Show ID/Pass</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div style="font-weight: bold;">FF Lone Wolf Duel</div>
+                            <div style="font-size: 0.75rem; color: var(--brand);">1v1 Fight</div>
+                        </td>
+                        <td><span style="color: var(--ok);">Upcoming</span></td>
+                        <td>
+                            <div style="font-size: 0.9rem;">26 April</div>
+                            <div style="font-size: 0.75rem; color: var(--muted);">07:00 PM</div>
+                        </td>
+                        <td class="room-id-cell" data-value="---">Locked 🔒</td>
+                        <td class="pass-cell" data-value="---">Locked 🔒</td>
+                        <td>₹10</td>
+                        <td>
+                            <button class="btn btn-secondary join-btn" data-tourney="FF Lone Wolf Duel" style="margin-bottom: 5px;">Register</button>
+                            <button class="btn unlock-btn" data-tourney="FF Lone Wolf Duel" style="background: rgba(0, 255, 102, 0.1); color: var(--brand); font-size: 0.7rem; padding: 4px 8px; width: 100%;">Show ID/Pass</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <section class="block" style="margin-top: 20px;">
+            <h3>Match Rules & Info</h3>
+            <ul style="margin-top: 10px; color: var(--muted); padding-left: 20px;">
+                <li>Join room 10 minutes before the match time.</li>
+                <li>Hackers will be banned permanently.</li>
+                <li>Teaming up is not allowed in Solo matches.</li>
+                <li>Screenshot of payment is mandatory for slot approval.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>Copyright <span id="year"></span> FabricBattle. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="../policies/terms.html">Terms</a>
+                <a href="../policies/privacy.html">Privacy</a>
+                <a href="../policies/legal.html">Legal</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
