@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FabricBattle | Elite Free Fire Tournaments</title>
+    <meta name="description" content="FabricBattle - The ultimate platform for Free Fire esports. Join tournaments, track leaderboards, and win prizes.">
+    <meta name="keywords" content="Free Fire, Tournament, Esports, FabricBattle, Gaming, BR Mode, Clash Squad">
+    <meta name="author" content="FabricBattle Team">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fabricbattle.com/">
+    <meta property="og:title" content="FabricBattle | Elite Free Fire Tournaments">
+    <meta property="og:description" content="Join the elite Free Fire battleground. Professional tournaments and real-time updates.">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="FabricBattle | Elite Free Fire Tournaments">
+    <meta property="twitter:description" content="Join the elite Free Fire battleground. Professional tournaments and real-time updates.">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html" class="brand">FabricBattle</a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">Menu</button>
+            <nav class="main-nav" id="mainNav">
+                <a href="index.html" class="active">Home</a>
+                <a href="pages/tournaments.html">Tournaments</a>
+                <a href="pages/leaderboard.html">Leaderboard</a>
+                <a href="contact/contact.html">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container" id="app">
+        <section class="hero">
+            <div class="hero-content">
+                <p class="eyebrow">India's Leading Free Fire Platform</p>
+                <h1>Dominate the Battleground with FabricBattle</h1>
+                <p class="hero-text">Fast tournament entries, instant match updates, and fair leaderboard tracking. Only for Free Fire Legends.</p>
+                <div class="hero-actions">
+                    <a href="pages/tournaments.html" class="btn btn-primary">Join Match</a>
+                    <a href="pages/leaderboard.html" class="btn btn-secondary">Check Rankings</a>
+                </div>
+            </div>
+            <div class="hero-stats">
+                <article class="stat-card"><h3>120+</h3><p>Active Matches</p></article>
+                <article class="stat-card"><h3>42K</h3><p>Registered Players</p></article>
+                <article class="stat-card"><h3>INR 8.5L</h3><p>Monthly Prize Pool</p></article>
+            </div>
+        </section>
+
+        <section class="block">
+            <h2>Featured Tournaments</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                        <span style="background: rgba(0, 255, 102, 0.1); color: var(--brand); padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">BR MODE (50 Players)</span>
+                        <span style="color: var(--ok); font-weight: bold;">₹20 ENTRY</span>
+                    </div>
+                    <h3>FF Battle Royale Mega</h3>
+                    <p style="margin-bottom: 5px; color: var(--muted);">Win Pool: <span style="color: #fff; font-weight: 600;">₹800</span> | Per Kill: <span style="color: #fff; font-weight: 600;">₹5</span></p>
+                    <p style="margin-bottom: 15px; font-size: 0.85rem; color: var(--brand);">📅 25 April | 🕒 08:00 PM</p>
+                    <button class="btn btn-primary join-btn" data-tourney="FF Battle Royale Mega">Join Tournament</button>
+                </article>
+
+                <article class="card">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                        <span style="background: rgba(0, 255, 102, 0.1); color: var(--brand); padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">CS MODE (4v4)</span>
+                        <span style="color: var(--ok); font-weight: bold;">₹40 ENTRY</span>
+                    </div>
+                    <h3>FF Clash Squad Cup</h3>
+                    <p style="margin-bottom: 5px; color: var(--muted);">Win Pool: <span style="color: #fff; font-weight: 600;">₹280</span> | Winners Take All</p>
+                    <p style="margin-bottom: 15px; font-size: 0.85rem; color: var(--brand);">📅 25 April | 🕒 09:30 PM</p>
+                    <button class="btn btn-primary join-btn" data-tourney="FF Clash Squad Cup">Join Tournament</button>
+                </article>
+
+                <article class="card">
+                    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px;">
+                        <span style="background: rgba(0, 255, 102, 0.1); color: var(--brand); padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 700;">LONE WOLF (1v1)</span>
+                        <span style="color: var(--ok); font-weight: bold;">₹10 ENTRY</span>
+                    </div>
+                    <h3>FF Lone Wolf Duel</h3>
+                    <p style="margin-bottom: 5px; color: var(--muted);">Winner Reward: <span style="color: #fff; font-weight: 600;">₹18</span> | Show Your Skill</p>
+                    <p style="margin-bottom: 15px; font-size: 0.85rem; color: var(--brand);">📅 26 April | 🕒 07:00 PM</p>
+                    <button class="btn btn-primary join-btn" data-tourney="FF Lone Wolf Duel">Join Tournament</button>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>Copyright <span id="year"></span> FabricBattle. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="policies/terms.html">Terms</a>
+                <a href="policies/privacy.html">Privacy</a>
+                <a href="policies/legal.html">Legal</a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
