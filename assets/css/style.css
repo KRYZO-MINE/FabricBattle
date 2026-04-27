@@ -67,6 +67,12 @@ a {
     text-transform: uppercase;
 }
 
+.brand-logo {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+}
+
 .main-nav {
     display: flex;
     align-items: center;
@@ -139,6 +145,31 @@ a {
 
 .hero-content {
     padding: 32px;
+}
+
+.hero-visuals {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.hero-banner {
+    background: var(--panel);
+    border: 1.5px solid var(--line);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.hero-banner:hover .hero-img {
+    transform: scale(1.05);
 }
 
 .eyebrow {
