@@ -29,6 +29,8 @@ FF admin panel/
 
 ## 🚀 Deployment
 
+**Live Website:** [https://fabric-battle.vercel.app/pages/tournaments](https://fabric-battle.vercel.app/pages/tournaments)
+
 This project is configured for easy deployment on **Vercel**.
 
 1. Push your code to a GitHub repository.
